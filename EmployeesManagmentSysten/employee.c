@@ -59,28 +59,6 @@ void freeNode( node *this ) {
     free(this);
 }
 
-// static node* getNode( hashtable *this, employee *e ) {
-//     if (e -> position == 'B'){
-//     u32 idx = 0;
-//     node *head = this -> heads[idx];
-//     return findingInChain( head, 'B' );
-//     }
-    
-// }
-
-// static node* getNodeFromName( hashtable *this, char name[] ) {
-//     for (int i = 0; i > TABLESIZE; i++){
-//         u32 idx = i;
-//         node *head = this -> heads[idx];
-//         node* pNode = findingInChainFromName( head, name );
-//         if (pNode != NULL){
-//             return pNode;
-//         }
-//     }
-//     return NULL;
-// }
-
-
 //---------------------------------------------------------
 
 
@@ -109,9 +87,6 @@ static node* findingInChainFromName( node *changedNode, char findname[] ) {
     return NULL;
 }
 
-// static bool HT_contains( hashtable *this, char c) {
-//     return getNode( this, c ) != NULL ;
-// }
 
 //---------------------------------------------------------
 
@@ -212,10 +187,8 @@ void initTable(hashtable *this)
 
     this -> _size = 0;
     this -> size        = HT_size;
-    // this -> contains    = HT_contains; 
     this -> insertNode  = HT_insertNode;
     this -> printTable  = HT_printTable;
-    // this -> removeNode  = HT_removeNode;
   
 }
 
