@@ -1,0 +1,17 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/fuaad/C/PersonalProjects/EmployeesManagmentSysten/output/main'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _initEmployee, symObjAddr: 0x0, symBinAddr: 0x100003760, symSize: 0x54 }
+  - { offsetInCU: 0xD3, offset: 0xD3, size: 0x8, addend: 0x0, symName: _initEmployee, symObjAddr: 0x0, symBinAddr: 0x100003760, symSize: 0x54 }
+  - { offsetInCU: 0x105, offset: 0x105, size: 0x8, addend: 0x0, symName: _freeEmployee, symObjAddr: 0x54, symBinAddr: 0x1000037B4, symSize: 0x24 }
+  - { offsetInCU: 0x129, offset: 0x129, size: 0x8, addend: 0x0, symName: _newNode, symObjAddr: 0x78, symBinAddr: 0x1000037D8, symSize: 0x4C }
+  - { offsetInCU: 0x16D, offset: 0x16D, size: 0x8, addend: 0x0, symName: _freeNode, symObjAddr: 0xC4, symBinAddr: 0x100003824, symSize: 0x24 }
+  - { offsetInCU: 0x191, offset: 0x191, size: 0x8, addend: 0x0, symName: _initTable, symObjAddr: 0xE8, symBinAddr: 0x100003848, symSize: 0x88 }
+  - { offsetInCU: 0x1D1, offset: 0x1D1, size: 0x8, addend: 0x0, symName: _HT_size, symObjAddr: 0x170, symBinAddr: 0x1000038D0, symSize: 0x18 }
+  - { offsetInCU: 0x1F9, offset: 0x1F9, size: 0x8, addend: 0x0, symName: _HT_insertNode, symObjAddr: 0x188, symBinAddr: 0x1000038E8, symSize: 0x2E4 }
+  - { offsetInCU: 0x365, offset: 0x365, size: 0x8, addend: 0x0, symName: _HT_printTable, symObjAddr: 0x46C, symBinAddr: 0x100003BCC, symSize: 0xCC }
+  - { offsetInCU: 0x3C1, offset: 0x3C1, size: 0x8, addend: 0x0, symName: _freeTable, symObjAddr: 0x538, symBinAddr: 0x100003C98, symSize: 0x94 }
+  - { offsetInCU: 0x42B, offset: 0x42B, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x5CC, symBinAddr: 0x100003D2C, symSize: 0x184 }
+  - { offsetInCU: 0x4BD, offset: 0x4BD, size: 0x8, addend: 0x0, symName: _findingInChain, symObjAddr: 0x750, symBinAddr: 0x100003EB0, symSize: 0x7C }
+...
