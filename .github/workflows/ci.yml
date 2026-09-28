@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    # Pinned with clang-format 18 so the format check matches local runs exactly.
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install clang-format
+        run: sudo apt-get update && sudo apt-get install -y clang-format-18
+      - name: Check formatting
+        run: make format-check CLANG_FORMAT=clang-format-18
+      - name: Build with warnings as errors
+        run: make
+      - name: Run tests under AddressSanitizer and UBSan
+        run: make test

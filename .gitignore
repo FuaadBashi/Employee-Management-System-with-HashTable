@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Added: build output
+employee-records
+tests/run_tests
+*.dSYM/
+.DS_Store
